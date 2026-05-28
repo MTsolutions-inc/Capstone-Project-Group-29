@@ -21,7 +21,7 @@ export default function Footer() {
         
         <div className="footer-bottom">
           <p>©2026 Design by Amaka & Ifeoma A. <br className="mobile-break" /> Built by GroupName. All rights reserved</p>
-          <p className="footer-logo">TSAcademy</p>
+          <a href="https://tsacademyonline.com/" className="footer-logo">TSAcademy</a>
         </div>
       </div>
     </footer>
