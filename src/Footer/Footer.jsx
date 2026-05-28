@@ -6,7 +6,15 @@ export default function Footer() {
       <div className="footer-container">
         <div className="footer-top">
           <h3>About</h3>
-          <p>first name of group members</p>
+          <p><ul>
+  <li>Ayomipo</li>
+  <li>Godscovenant</li>
+  <li>Chidiebere</li>
+  <li>John</li>
+  <li>Toyosi</li>
+  <li>Oluwatosin</li>
+  <li>Charles</li>
+         </ul></p>
         </div>
         
         <hr className="footer-divider" />
