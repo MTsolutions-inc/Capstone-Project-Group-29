@@ -1,0 +1,47 @@
+.table-section {
+
+}
+
+.table-section {
+
+}
+
+.table-description {
+  
+}
+
+.table-content {
+
+}
+
+.table-caption {
+
+}
+
+.planet-table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  width: 95%;
+  margin: 0 auto;
+}
+
+thead tr th {
+
+}
+
+.table-body {
+    rowspan: 4;
+    column-span: 2;
+}
+.table-body tr td {
+    text-align: center;
+}
+
+.table-row {
+
+}
+
+.table-row .table-cell {
+
+}
+
