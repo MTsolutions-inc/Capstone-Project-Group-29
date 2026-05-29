@@ -72,7 +72,7 @@ export default function PlanetsSection() {
         setLoading(false)
       })
       .catch(() => {
-        // Graceful fallback with static data so the UI always renders
+        // fallback with static data so the UI always renders
         setPlanets([
           { planet: 'Mercury', distanceFromSun: 0.39, image: PLANET_IMAGES.Mercury },
           { planet: 'Venus',   distanceFromSun: 0.72, image: PLANET_IMAGES.Venus },
