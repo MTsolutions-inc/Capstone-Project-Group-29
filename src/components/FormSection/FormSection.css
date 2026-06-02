@@ -1,0 +1,149 @@
+:root {
+  --blue-accent: #1d4ed8; /* Exact vibrant corporate blue from the layout image */
+}
+
+/* Container Structure */
+.contact-section {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 40px 24px;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.contact-section h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #1d4ed8; /* Matches the header color token in your goal design */
+  margin-bottom: 12px;
+  letter-spacing: -0.5px;
+}
+
+.contact-section > p {
+  color: #334155;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 36px;
+}
+
+/* Two-Column Form Layout Grid */
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+/* Input Wrappers */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Field Labels */
+.form-group label {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.req {
+  color: #ef4444;
+  margin-left: 2px;
+}
+
+/* Base Input States */
+.form-group input {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  color: #334155;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.form-group input::placeholder {
+  color: #94a3b8;
+}
+
+/* Input Focus Ring Highlights */
+.form-group input:focus {
+  outline: none;
+  border-color: var(--blue-accent);
+  box-shadow: 0 0 0 3px rgba(29, 78, 216, 0.1);
+}
+
+/* Counter Alignment */
+.char-count {
+  font-size: 0.8rem;
+  color: #64748b;
+  margin-top: 2px;
+}
+
+/* Full-width Grid Modifiers */
+.span-2 {
+  grid-column: span 2;
+  display: flex;
+  justify-content: ;
+  margin-top: 8px;
+}
+
+/* Action Trigger Button */
+.submit-btn {
+  background-color: var(--blue-accent);
+  color: #ffffff;
+  padding: 14px 36px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: background-color 0.15s ease;
+  min-width: 250px;
+  justify-content: center; 
+  
+  gap: 10px;
+  transition: background-color 0.15s ease;
+  min-width: 250px;
+}
+
+
+.submit-btn:hover {
+  background-color: #1e40af;
+}
+
+.submit-btn::after {
+  content: '›';
+  font-size: 1.3rem;
+  line-height: 1;
+}
+
+.submit-btn:disabled {
+  background-color: #94a3b8;
+  cursor: not-allowed;
+}
+
+/* General Success Message Styling */
+.success-message {
+  text-align: center;
+  padding: 40px;
+  background: #f8fafc;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+}
+
+/* Responsive Structural Collapse for Mobile Screens */
+@media (max-width: 768px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .span-2 {
+    grid-column: span 1;
+  }
+}
