@@ -1,5 +1,8 @@
 import './App.css';
 import Hero from './components/Hero/Hero';
+import VideoSection from './components/VideoSection/VideoSection';
+import TableSection from './components/TableSection/TableSection';
+import PlanetCard from './components/PlanetCard/PlanetCard';
 import TableSection from "./components/TableSection/TableSection";
 import PlanetCard from "./components/PlanetCard/PlanetCard";
 import FormSection from './components/FormSection/FormSection';
@@ -9,9 +12,10 @@ function App() {
   return (
     <>
       <Hero />
+      <VideoSection />
       <TableSection />
       <PlanetCard />
-      <FormSection/>
+      <FormSection />
       <Footer />
     </> // 👈 Added the missing slash here to close the fragment!
   );

@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="footer-container">
         <div className="footer-top">
           <h3>About</h3>
-          <p>
+          <div>
             <ul>
              <li>Ayomipo</li>
              <li>Godscovenant</li>
@@ -17,7 +17,7 @@ export default function Footer() {
              <li>Oluwatosin</li>
              <li>Charles</li>
             </ul>
-         </p>
+          </div>
         </div>
         
         <hr className="footer-divider" />
