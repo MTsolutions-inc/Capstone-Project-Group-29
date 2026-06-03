@@ -1,93 +1,124 @@
+/* ==========================================================================
+   PLANET GRID MODULE STYLES
+   ========================================================================== */
 .planets-section { background: var(--space); }
 
-.planets-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
+.grid-section {
+  background-color: #F2F7FF !important; 
+  padding: 70px 40px;
+  text-align: center;
 }
 
+/* 2. Top Section Labels */
+.section-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: var(--blue-accent);
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.grid-section h2 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: clamp(1.2rem, 3vw, 1.7rem);
+  font-weight: 700;
+  color: var(--blue-accent);
+  margin-bottom: 10px;
+}
+
+
+.grid-section > p {
+  color:#334155; 
+  max-width: 520px;
+  margin: 0 auto 40px;
+  font-size: 0.93rem;
+  line-height: 1.6;
+}
+
+/* 3. The Grid Layout Container */
+.planet-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+/* 4. Individual Cards */
 .planet-card {
-  background: var(--card);
-  border: 1px solid var(--border);
-  border-radius: 10px;
+  background-color: #ffffff; 
+  border-radius: 12px;
   overflow: hidden;
-  transition: transform 0.25s, border-color 0.25s, box-shadow 0.25s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .planet-card:hover {
-  transform: translateY(-6px);
-  border-color: var(--accent);
-  box-shadow: 0 16px 40px rgba(240, 100, 73, 0.15);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 28px rgba(26, 86, 219, 0.18);
 }
 
-.planet-figure {
-  display: flex;
-  flex-direction: column;
-}
-
-.planet-figure img {
+/* 5. Planet Image & Gradient Background */
+.planet-card img {
   width: 100%;
   height: 200px;
   object-fit: cover;
   display: block;
-  background: #0a0520;
+  background: linear-gradient(135deg, #1a56db, #071a5e) !important;
 }
 
-.planet-caption {
-  padding: 16px;
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  border-top: 1px solid var(--border);
+/* 6. Text Container Inside Card (Fixed Class Name & Comment Syntax) */
+.planet-card-info {
+  padding: 15px 10px;
+  text-align: center;
+  width: 100%;
 }
 
-.planet-name {
-  font-family: 'Syne', sans-serif;
-  font-weight: 700;
-  font-size: 1rem;
-  color: var(--white);
-}
-
-.planet-dist {
-  font-size: 0.78rem;
-  color: var(--cyan);
-  font-weight: 500;
-}
-
-.planets-loading {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 16px;
-  padding: 60px 0;
-  color: var(--muted);
-}
-
-.loader {
-  width: 36px;
-  height: 36px;
-  border: 3px solid var(--border);
-  border-top-color: var(--accent);
-  border-radius: 50%;
-  animation: spin 0.8s linear infinite;
-}
-
-@keyframes spin { to { transform: rotate(360deg); } }
-
-.planets-error {
-  background: rgba(240, 100, 73, 0.1);
-  border: 1px solid rgba(240, 100, 73, 0.3);
-  border-radius: 6px;
-  padding: 10px 16px;
+.planet-card-info .p-name {
+  font-family: 'Orbitron', sans-serif;
   font-size: 0.85rem;
-  color: var(--accent);
-  margin-bottom: 24px;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 4px;
 }
 
-@media (max-width: 900px) {
-  .planets-grid { grid-template-columns: repeat(2, 1fr); }
+.planet-card-info .p-dist {
+  font-size: 0.8rem;
+  color: #64748b;
+  font-weight: 600;
+}
+
+.planet-card-info .p-dist span {
+  color: var(--blue-accent);
+}
+
+/* ==========================================================================
+   RESPONSIVE OVERRIDES
+   ========================================================================== */
+@media (max-width: 768px) {
+  .grid-section {
+    padding: 40px 20px;
+  }
+  .planet-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+  }
 }
 
 @media (max-width: 480px) {
-  .planets-grid { grid-template-columns: 1fr; }
+  .planet-card img {
+    height: 90px;
+  }
+  .planet-card-info {
+    padding: 8px;
+  }
+  .planet-card-info .p-name {
+    font-size: 0.72rem;
+  }
+  .planet-card-info .p-dist {
+    font-size: 0.68rem;
+  }
 }
