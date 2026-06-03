@@ -7,7 +7,7 @@ export default function VideoSection() {
        <div className="video-container">
         <figure>
             <video controls autoPlay loop muted>
-            <source src="/public/Planet.mp4" type="video/mp4" />
+            <source src="/Planet.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>                                 
         </figure>
