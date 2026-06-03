@@ -1,3 +1,9 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Inter', Tahoma, sans-serif;
+}
 .counter {
   font-size: 16px;
   padding: 5px 10px;

@@ -1,6 +1,7 @@
 /* ==========================================================================
    PLANET GRID MODULE STYLES
    ========================================================================== */
+.planets-section { background: var(--space); }
 
 .grid-section {
   background-color: #F2F7FF !important; 

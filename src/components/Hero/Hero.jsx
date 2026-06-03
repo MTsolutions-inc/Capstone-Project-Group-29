@@ -4,6 +4,7 @@ import "./Hero.css";
 
 export default function Hero() {
   return (
+  
     <section className="hero">
       <div className="hero-text">
         <h1>Explore Our Solar System Through Data</h1>
