@@ -11,8 +11,8 @@ function App() {
     <>
       <Hero />
       <VideoSection />
-      <TableSection />
       <PlanetCard />
+      <TableSection />
       <FormSection />
       <Footer />
     </> // 👈 Added the missing slash here to close the fragment!
