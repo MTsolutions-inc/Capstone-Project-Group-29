@@ -85,8 +85,3 @@
   font-size: 13px;
   width: 12%;
 }
-@media (max-width: 768px) {
-  .table-container {
-    display: none;
-  }
-}
