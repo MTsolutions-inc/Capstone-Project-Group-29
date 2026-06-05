@@ -83,63 +83,66 @@ try {
       ) : (
         <form onSubmit={handleSubmit} className="form-grid">
           {errorMessage && <div className="error-banner">{errorMessage}</div>}
+<div className="form-group">
+  <label htmlFor="fullName">Full Name<span className="req">*</span></label>
+  <input 
+    type="text" 
+    id="fullName"
+    name="fullName"
+    placeholder="Full name" 
+    value={formData.fullName}
+    onChange={handleChange}
+    required 
+  />
+</div>
 
-          <div className="form-group">
-            <label>Full Name<span className="req">*</span></label>
-            <input 
-              type="text" 
-              name="fullName"
-              placeholder="Full name" 
-              value={formData.fullName}
-              onChange={handleChange}
-              required 
-            />
-          </div>
+<div className="form-group">
+  <label htmlFor="email">Email<span className="req">*</span></label>
+  <input 
+    type="email" 
+    id="email"
+    name="email"
+    placeholder="Please enter a valid email address." 
+    value={formData.email}
+    onChange={handleChange}
+    required 
+  />
+</div>
 
-          <div className="form-group">
-            <label>Email<span className="req">*</span></label>
-            <input 
-              type="email" 
-              name="email"
-              placeholder="example@example.com" 
-              value={formData.email}
-              onChange={handleChange}
-              required 
-            />
-          </div>
+<div className="form-group">
+  <label htmlFor="phone">Phone Number<span className="req">*</span></label>
+  <input 
+    type="tel" 
+    id="phone"
+    name="phone"
+    placeholder="Please enter a valid phone number." 
+    value={formData.phone}
+    onChange={handleChange}
+    required 
+  />
+</div>
 
-          <div className="form-group">
-            <label>Phone Number<span className="req">*</span></label>
-            <input 
-              type="tel" 
-              name="phone"
-              placeholder="Please enter a valid phone number." 
-              value={formData.phone}
-              onChange={handleChange}
-              required 
-            />
-          </div>
+<div className="form-group">
+  <label htmlFor="message">Message<span className="req">*</span></label>
+  <textarea 
+    id="message"
+    name="message"
+    placeholder="Enter your message" 
+    maxLength={maxChars}
+    value={formData.message}
+    onChange={handleChange}
+    rows="4"
+    required 
+  />
+  <span className="char-count">{charsRemaining} characters</span>
+</div>
 
-          <div className="form-group">
-            <label>Message<span className="req">*</span></label>
-            <input 
-              type="text"
-              name="message"
-              placeholder="Enter your message" 
-              maxLength={maxChars}
-              value={formData.message}
-              onChange={handleChange}
-              required 
-            />
-            <span className="char-count">{charsRemaining} characters</span>
-          </div>
-
-          <div className="span-2">
-            <button type="submit" className="submit-btn" disabled={isSubmitting}>
-              {isSubmitting ? "Submitting..." : "Submit"}
-            </button>
-          </div>
-        </form>
+<div className="span-2">
+  <button type="submit" className="submit-btn" disabled={isSubmitting}>
+    {isSubmitting ? "Submitting..." : "Submit"}
+  </button>
+</div>
+</form>
       )}
     </section>
   );

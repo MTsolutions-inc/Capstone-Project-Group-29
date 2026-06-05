@@ -2,8 +2,20 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: 'Inter', Tahoma, sans-serif;
+  font-family: "Inter", Tahoma, sans-serif;
 }
+a {
+  text-decoration: none;
+  color: inherit;
+}
+/*ul, ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-inline-start: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}*/
 .counter {
   font-size: 16px;
   padding: 5px 10px;
@@ -173,7 +185,7 @@
 
   &::before,
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     top: -4.5px;
     border: 5px solid transparent;
