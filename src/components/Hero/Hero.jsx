@@ -4,6 +4,10 @@ import "./Hero.css";
 
 export default function Hero() {
   return (
+<<<<<<< HEAD
+=======
+  
+>>>>>>> 9134d4f8259ec0e795352323e3dc340890d234fc
     <section className="hero">
       <div className="hero-text">
         <h1>Explore Our Solar System Through Data</h1>

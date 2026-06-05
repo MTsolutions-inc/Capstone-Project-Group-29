@@ -8,7 +8,11 @@
     width: 100%;
 }
 .video-container {
+<<<<<<< HEAD
     width: 70%;
+=======
+    width: 60%;
+>>>>>>> 9134d4f8259ec0e795352323e3dc340890d234fc
     height: 300px;
     border-radius: 10px;
     overflow: hidden;
@@ -27,10 +31,17 @@
 .video-section h2{
   color: #164BAF;
    font-weight: 600; 
+<<<<<<< HEAD
    font-size: 2.2em;
 }
 .video-section p {
     font-size: 1.5em;
+=======
+   font-size: 2.0em;
+}
+.video-section p {
+    font-size: 1em;
+>>>>>>> 9134d4f8259ec0e795352323e3dc340890d234fc
 }
 .video-section span {
     color: #1274A4;

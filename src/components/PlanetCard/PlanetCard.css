@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .planets-section { background: var(--space); }
 
 .planets-grid {
@@ -26,10 +27,78 @@
 }
 
 .planet-figure img {
+=======
+/* ==========================================================================
+   PLANET GRID MODULE STYLES
+   ========================================================================== */
+.planets-section { background: var(--space); }
+
+.grid-section {
+  background-color: #F2F7FF !important; 
+  padding: 70px 40px;
+  text-align: center;
+}
+
+/* 2. Top Section Labels */
+.section-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: var(--blue-accent);
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.grid-section h2 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: clamp(1.2rem, 3vw, 1.7rem);
+  font-weight: 700;
+  color: var(--blue-accent);
+  margin-bottom: 10px;
+}
+
+
+.grid-section > p {
+  color:#334155; 
+  max-width: 520px;
+  margin: 0 auto 40px;
+  font-size: 0.93rem;
+  line-height: 1.6;
+}
+
+/* 3. The Grid Layout Container */
+.planet-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+/* 4. Individual Cards */
+.planet-card {
+  background-color: #ffffff; 
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.planet-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 28px rgba(26, 86, 219, 0.18);
+}
+
+/* 5. Planet Image & Gradient Background */
+.planet-card img {
+>>>>>>> 9134d4f8259ec0e795352323e3dc340890d234fc
   width: 100%;
   height: 200px;
   object-fit: cover;
   display: block;
+<<<<<<< HEAD
   background: #0a0520;
 }
 
@@ -90,4 +159,60 @@
 
 @media (max-width: 480px) {
   .planets-grid { grid-template-columns: 1fr; }
+=======
+  background: linear-gradient(135deg, #1a56db, #071a5e) !important;
+}
+
+/* 6. Text Container Inside Card (Fixed Class Name & Comment Syntax) */
+.planet-card-info {
+  padding: 15px 10px;
+  text-align: center;
+  width: 100%;
+}
+
+.planet-card-info .p-name {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 4px;
+}
+
+.planet-card-info .p-dist {
+  font-size: 0.8rem;
+  color: #64748b;
+  font-weight: 600;
+}
+
+.planet-card-info .p-dist span {
+  color: var(--blue-accent);
+}
+
+/* ==========================================================================
+   RESPONSIVE OVERRIDES
+   ========================================================================== */
+@media (max-width: 768px) {
+  .grid-section {
+    padding: 40px 20px;
+  }
+  .planet-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .planet-card img {
+    height: 90px;
+  }
+  .planet-card-info {
+    padding: 8px;
+  }
+  .planet-card-info .p-name {
+    font-size: 0.72rem;
+  }
+  .planet-card-info .p-dist {
+    font-size: 0.68rem;
+  }
+>>>>>>> 9134d4f8259ec0e795352323e3dc340890d234fc
 }

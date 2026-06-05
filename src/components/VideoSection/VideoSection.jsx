@@ -5,10 +5,19 @@ export default function VideoSection() {
   return (
     <section className="video-section">
        <div className="video-container">
+<<<<<<< HEAD
           <video controls autoPlay loop muted>
             <source src="/public/Planet.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
+=======
+        <figure>
+          <video controls autoPlay loop muted>
+            <source src="/Planet.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>                                 
+        </figure> 
+>>>>>>> 9134d4f8259ec0e795352323e3dc340890d234fc
        </div>
        <div className="video-content">
             <h2 >How Planetary Data Helps Us<br />Understand Space</h2>
@@ -23,4 +32,8 @@ export default function VideoSection() {
 
     
   ) }
+<<<<<<< HEAD
   
+=======
+  
+>>>>>>> 9134d4f8259ec0e795352323e3dc340890d234fc
