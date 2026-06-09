@@ -1,16 +1,14 @@
 :root {
   --blue-accent: #1d4ed8; /* Exact vibrant corporate blue from the layout image */
 }
-
 /* Container Structure */
 .contact-section {
   max-width: 1000px;
-  margin: 40px auto;
-  padding: 40px 24px;
-  font-family:
-    system-ui,
-    -apple-system,
-    sans-serif;
+  /* Top margin pushes it down, auto centers it horizontally, 0px keeps it tight to the footer */
+  margin: 100px auto 0px auto; 
+  padding: 0 24px 40px 24px;
+  font-family: system-ui, -apple-system, sans-serif;
+  box-sizing: border-box;
 }
 
 .contact-section h2 {
