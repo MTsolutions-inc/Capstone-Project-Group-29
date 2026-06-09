@@ -1,0 +1,192 @@
+/* HERO MODULE STYLES */
+.hero {
+  background: #051540  !important;/* 👈 Changed var(--navy) to match the dark deep cosmic blue backdrop */
+  min-height: 80vh;    /* 👈 Increased from 320px to create vertical breathing room */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* 👈 Ensures content pushes to left and image pushes to right */
+  padding: 60px 5%;    /* 👈 Uses percentages for wider responsive padding across screens */
+  position: relative;
+  overflow: hidden;
+  gap: 40px;  
+  width: 100%;         /* 👈 Increased spacing gap between text and image */
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  /* 👈 Shifted gradient target coordinates to align directly behind the larger planet location */
+  background: radial-gradient(ellipse at 80% 50%, rgba(59, 130, 246, 0.2) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.hero-content {
+flex: 0 1 550px;             
+  max-width: 550px;   
+  position: relative;
+  z-index: 2;
+}
+
+.hero-content h1 {
+  /* 👈 Removed 'Orbitron' to match the smooth geometric clean typography */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  font-size: 3.2rem;   /* 👈 Bumped up from 1.85rem to establish strong bold visual hierarchy */
+  font-weight: 700;    /* 👈 Shifted down from chunkier 900 setting */
+  color: #ffffff;
+  line-height: 1.2;    /* 👈 Tightened down for cleaner sentence stacking */
+  margin-bottom: 20px;
+  letter-spacing: -0.02em; /* 👈 Adds modern tighter letter tracking */
+}
+
+.hero-content p {
+  color: #a0aec0;      /* 👈 Slightly softened light gray tone fill color */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  font-size: 1.05rem;  /* 👈 Increased from 0.88rem for comfortable reading density */
+  line-height: 1.6;
+  margin-bottom: 35px;
+}
+
+.btn-primary {
+  background: #1d4ed8; /* 👈 Set clear blue fill accent directly */
+  color: #fff;
+  border: none;
+  padding: 12px 26px;  /* 👈 Made button sizes slightly larger and more clickable */
+  border-radius: 6px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.btn-primary:hover {
+  background: #1e40af;
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: #fff;
+  border: 1.5px solid rgba(255, 255, 255, 0.3);
+  padding: 12px 26px;
+  border-radius: 6px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 14px;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.btn-secondary:hover {
+  border-color: #fff;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.hero-image {
+  flex:0 1 auto; /* 👈 Allows the image to scale naturally within its container */
+  display: flex;
+  justify-content: center; /* 👈 Aligns the image to the right edge of the hero section */
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-planet-img {
+  /* 👈 Increased clamp limits drastically so the planet image stands out clean and grand */
+  width: clamp(320px, 45vw, 520px);  
+  height: clamp(320px, 45vw, 520px); 
+  border-radius: 50%;
+  object-fit: cover;
+ 
+  display: block;
+  /* 👈 Amplified drop-shadow blur radius properties to get that ambient background atmospheric aura glow */
+  filter: none 
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+@media (max-width: 968px) { 
+  
+  .hero {
+    display: grid;                 
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+    gap: 16px;                     
+    padding: 60px 20px;            
+    min-height: 100vh;             
+    box-sizing: border-box;
+  }
+
+  .hero-image {
+    grid-row: 1;                   
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+  }
+
+  .hero-content {
+    grid-row: 2;                   
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;        
+    align-items: center;
+    padding: 0 10px;               
+    box-sizing: border-box;
+  }
+
+  .hero-content h1 {
+    font-size: 2.2rem;             
+    margin-top: 0;                 
+    margin-bottom: 12px;           
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #e2e8f0;                
+    width: 100%;
+    max-width: 380px;              
+    margin: 0 auto 24px auto;      
+  }
+
+  /* 🎯 THE MAGIC FIX: This forces the container to layout buttons side-by-side */
+  .hero-buttons {
+    display: flex !important;
+    flex-direction: row !important; /* Forces horizontal row layout */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 12px;                      /* Creates perfect, clean separation gap between buttons */
+    margin-top: 8px;
+  }
+
+  /* Clean up button parameters inside the mobile wrapper container */
+  .hero-buttons .btn-primary, 
+  .hero-buttons .btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 46% !important;         
+    max-width: 145px;
+    padding: 12px 4px !important;  
+    font-size: 0.9rem !important;
+    white-space: nowrap;           
+    box-sizing: border-box;
+    margin: 0 !important;          /* Resets any conflicting desktop margins completely */
+  }
+
+  .hero-planet-img {
+    width: clamp(240px, 45vw, 320px);  
+    height: clamp(240px, 45vw, 320px); 
+  }
+}

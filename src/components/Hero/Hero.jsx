@@ -1,24 +1,41 @@
+<<<<<<< HEAD
+import React from 'react';
+import './Hero.css';
+
+function Hero() {
+=======
 // import "./Hero.css";
 
 export default function Hero() {
+>>>>>>> upstream/main
   return (
     <section className="hero">
-      <div className="hero-text">
+      
+      <div className="hero-content">
         <h1>Explore Our Solar System Through Data</h1>
-
-        <p>
-          Understand the planets not just by names, but by measureable facts.
-        </p>
-
+        <p>Understand the planets not just by name, but by measurable facts. From size and mass to gravity and density, this page breaks down the solar system in a clear, data-driven way.</p>
+        
+        
         <div className="hero-buttons">
-          <button>Explore the Data</button>
-          <button className="outline">Contact Us</button>
+          <a href="#facts" className="btn-primary">Explore the Data</a>
+          <a href="#contact" className="btn-secondary">Contact Us</a>
         </div>
       </div>
 
       <div className="hero-image">
+<<<<<<< HEAD
+        <img className="hero-planet-img" src="src/assets/Image(1).png" alt="Earth from space" />
+=======
         <img src="/earth.png" alt="Earth"/>
+>>>>>>> upstream/main
       </div>
+    
     </section>
   );
+<<<<<<< HEAD
 }
+
+export default Hero;
+=======
+}
+>>>>>>> upstream/main

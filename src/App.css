@@ -1,30 +1,43 @@
-* {
+/* ==========================================================================
+   GLOBAL RESET & PAGE BEHAVIOR
+   ========================================================================== */
+html {
+  scroll-behavior: smooth;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  overflow-y: auto; /* Allows natural vertical scrolling */
+  overflow-x: hidden; /* Prevents accidental horizontal layout shifting */
+  background-color: #ffffff; /* 💡 Clean white background */
+  color: #1e293b; /* 💡 Crisp, dark slate text for perfect readability */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+*, *:before, *:after {
   box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  font-family: "Inter", Tahoma, sans-serif;
 }
-a {
-  text-decoration: none;
-  color: inherit;
+
+/* ==========================================================================
+   MAIN APP WRAPPER LAYOUT
+   ========================================================================== */
+#root, .app-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
-/*ul, ol {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  padding-inline-start: 0;
-  margin-block-start: 0;
-  margin-block-end: 0;
-}*/
-.counter {
-  font-size: 16px;
-  padding: 5px 10px;
-  border-radius: 5px;
-  color: var(--accent);
-  background: var(--accent-bg);
-  border: 2px solid transparent;
-  transition: border-color 0.3s;
-  margin-bottom: 24px;
+
+/* Ensure all individual sections stack sequentially down the page */
+section {
+  width: 100%;
+  position: relative;
+  box-sizing: border-box;
+}
 
   &:hover {
     border-color: var(--accent-border);
@@ -33,7 +46,7 @@ a {
     outline: 2px solid var(--accent);
     outline-offset: 2px;
   }
-}
+
 
 .hero {
   position: relative;
@@ -200,3 +213,7 @@ a {
     border-right-color: var(--border);
   }
 }
+
+
+
+

@@ -85,7 +85,7 @@ try {
           {errorMessage && <div className="error-banner" role="alert">{errorMessage}</div>}
 
           <div className="form-group">
-            <label htmlfor="fullname" >Full Name<span className="req">*</span></label>
+            <label htmlFor="fullname" >Full Name<span className="req">*</span></label>
             <input
               id="fullname"
               type="text" 
@@ -111,7 +111,7 @@ try {
           </div>
 
           <div className="form-group">
-            <label htmlfor="phone" >Phone Number<span className="req">*</span></label>
+            <label htmlFor="phone" >Phone Number<span className="req">*</span></label>
             <input 
               id="phone"
               type="tel" 
@@ -125,7 +125,7 @@ try {
           </div>
 
           <div className="form-group">
-            <label htmlfor="message" >Message<span className="req">*</span></label>
+            <label htmlFor="message" >Message<span className="req">*</span></label>
             <textarea 
               id="message"
               type="text"
@@ -152,4 +152,3 @@ try {
 }
 
 export default FormSection;
-

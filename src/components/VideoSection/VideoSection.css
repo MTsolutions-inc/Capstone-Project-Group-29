@@ -1,3 +1,118 @@
+<<<<<<< HEAD
+/* ==========================================================================
+   DESKTOP STYLES (Keep outside and above the media query)
+   ========================================================================== */
+
+/* Container section layout */
+.video-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;                   /* Controls horizontal space between video and text */
+  padding: 80px 10%;
+  background: #ffffff;         /* Clean white backdrop matching Figma */
+}
+
+/* Video container constraints */
+.video-container {
+  flex: 0 1 450px;             /* Limits video section from stretching wider than 450px */
+  width: 100%;
+}
+
+/* Remove default margins from figure if any */
+.video-container figure {
+  margin: 0;
+  width: 100%;
+}
+
+/* Forcing the HTML5 video element into a rounded square */
+.video-container video {
+  width: 100%;
+  aspect-ratio: 1 / 1;         /* Forces the video element to be a perfect square */
+  object-fit: cover;           /* Ensures video content fills square nicely without distortion */
+  border-radius: 28px;         /* Smooth rounded corners matching Figma */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); /* Soft ambient shadow */
+}
+
+/* Content typography & alignment styling */
+.video-content {
+  flex: 0 1 500px;             /* Keeps the text container balanced */
+  text-align: left;
+}
+
+.video-content h2 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #1d4ed8;              /* Vibrant blue matching headers */
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+
+.video-content p {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: #4a5568;              /* Slate gray color */
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Styling the keyword spans inside paragraphs */
+.video-content p span {
+  color: #1d4ed8;
+  font-weight: 600;
+}
+
+
+/* ==========================================================================
+   MOBILE STYLES (Merged into ONE perfectly enclosed block)
+   ========================================================================== */
+@media (max-width: 768px) {
+
+  /* 1. Stacks video and text correctly */
+  .video-section {
+    display: flex;
+    flex-direction: column-reverse; /* Pulls text to top, pushes video to bottom */
+    align-items: center;      
+    justify-content: center;
+    gap: 30px;                     /* Reduced gap for mobile layout */
+    padding: 40px 24px;            /* Tighter padding safe for phone screens */
+  }
+
+  /* 2. Resets text container width and alignment */
+  .video-content {
+    flex: 1 1 100%;
+    text-align: center;            /* Overrides desktop left-alignment */
+    width: 100%;
+  }
+
+  .video-content h2 {
+    font-size: 2rem;               /* Scales typography for mobile viewports */
+    margin-bottom: 16px;
+  }
+
+  /* 3. Manages paragraph layout arrangement and line breaks */
+  .video-content p {
+    font-size: 1.1rem;             /* Perfectly matching your target scale */
+    line-height: 1.6;           
+    width: 100%;                
+    max-width: 100%;               /* Lets the lines span comfortably across mobile width */
+    margin: 0 auto 24px auto;      /* Centers block, adds spacing above the video */
+    text-align: center;         
+  }
+
+  /* 4. Constrains video sizing so it doesn't clip or look massive */
+  .video-container {
+    flex: 1 1 100%;
+    width: 100%;
+    max-width: 320px;              /* Preserves square card proportions on mobile */
+  }
+  
+  .video-container video {
+    border-radius: 24px;     
+  }
+
+} /* 💡 THIS CLOSES THE MEDIA QUERY PERFECTLY. Desktop is now safe! */
+=======
 .video-section {
   display: flex;
   justify-content: space-around;
@@ -54,3 +169,4 @@
     margin-bottom: 20px;
   }
 }
+>>>>>>> upstream/main
