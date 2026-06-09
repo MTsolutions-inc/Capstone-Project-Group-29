@@ -134,15 +134,21 @@
     font-size: 15px;
   }
 
-  /* 🎯 FIX: Explicitly forces horizontal alignment on compact phone screens */
+  /* 🎯 FORCES HORIZONTAL ALIGNMENT & PREVENTS COLLISION ON PHONES */
   .footer-team-list ul {
     display: flex !important;
     flex-direction: row !important;
     flex-wrap: wrap !important;
     justify-content: center;     /* Centers names beautifully on small displays */
-    gap: 12px !important;          /* Closer text gap parameters for mobile bounds */
+    gap: 12px 16px !important;    /* 12px vertical gap, 16px horizontal gap */
     padding: 0 !important;
     margin: 0 !important;
+  }
+
+  /* 🔑 THE FIX: Overrides the desktop 25% width calculation ONLY on mobile */
+  .footer-team-list ul li {
+    width: auto !important;         /* Let's names size dynamically on mobile */
+    white-space: nowrap !important; /* Prevents a name from breaking onto two lines */
   }
 
   .footer-top p {

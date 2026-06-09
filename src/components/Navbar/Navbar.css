@@ -45,5 +45,12 @@ nav {
 @media (max-width: 768px) {
   nav {
     padding: 12px 20px;
+    /* FIX: This forces the flex items (the logo) to center horizontally */
+    justify-content: center; 
+  }
+
+  .logo {
+    /* FIX: Ensures the logo anchor tag behaves predictably inside the centered flexbox */
+    margin: 0 auto; 
   }
 }

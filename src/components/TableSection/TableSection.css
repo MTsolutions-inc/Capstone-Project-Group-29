@@ -1,12 +1,11 @@
-/* Container Layout */
 .table-container {
-  max-width: 1000px;         
-  width: 1440px !important;     /* Ensures it scales down safely on smaller tablet screens */
-  margin: 50px auto;         /* Centers the table perfectly on the screen */
+  max-width: 1000px; 
+  width: 100% !important;     
+  margin: 50px auto 0px auto; /* 0px bottom margin pulls the next section up */
   padding: 0 24px;
   color: #1a253c;
   box-sizing: border-box;
-  height: 970px;
+  height: auto;               /* Allows the container to wrap naturally around the table */
 }
 
 .table-content {
