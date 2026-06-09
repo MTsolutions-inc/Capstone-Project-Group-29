@@ -5,15 +5,7 @@
   background: #030f33;
   color: #ffffff;
   padding: 60px 40px 40px 40px;
-<<<<<<< HEAD
-  display: flex; 
-  flex-direction: row;
-  justify-content: center;
-  font-family: 'Inter', sans-serif;
-  width: 100%;                  /* Forces background from left to right edges */
-=======
   width: 100%;
->>>>>>> upstream/main
   box-sizing: border-box;
 }
 
@@ -86,15 +78,10 @@
 
 .footer-logo {
   font-weight: 700;
-<<<<<<< HEAD
-  color: #ffffff;
-  text-decoration: none;
-=======
   font-size: 1.8em;
 }
 .footer-bottom a:hover {
   color: purple;
->>>>>>> upstream/main
 }
 
 
@@ -133,14 +120,7 @@
   }
 }
 
-<<<<<<< HEAD
-
-/* ==========================================================================
-   MOBILE PHONE RESPONSIVE OVERRIDES (max-width: 480px)
-   ========================================================================== */
-=======
 /* Mobile view */
->>>>>>> upstream/main
 @media (max-width: 480px) {
   .site-footer {
     padding: 40px 20px 25px 20px;

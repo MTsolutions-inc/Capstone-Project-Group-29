@@ -5,7 +5,6 @@ export default function Footer() {
   return (
     <footer className="site-footer">
       <div className="footer-container">
-<<<<<<< HEAD
 <div className="footer-top">
   <h3>About</h3>
   
@@ -25,22 +24,6 @@ export default function Footer() {
   </div>
 </div>
         
-=======
-        <div className="footer-top">
-          <h3>About</h3>
-          <ul>
-            <li>Ayomipo</li>
-            <li>Godscovenant</li>
-            <li>Chidiebere</li>
-            <li>John</li>
-            <li>Toyosi</li>
-            <li>Oluwatosin</li>
-            <li>Charles</li>
-            <li>OlaOluwa</li>
-          </ul>
-        </div>
-
->>>>>>> upstream/main
         <hr className="footer-divider" />
 
         <div className="footer-bottom">
