@@ -1,6 +1,5 @@
 import React from 'react';
 import './Hero.css';
-import Image(1) from '../assets/Image(1).png';
 
 function Hero() {
   return (
@@ -18,7 +17,7 @@ function Hero() {
       </div>
 
       <div className="hero-image">
-        <img className="hero-planet-img" src={Image(1)} alt="Earth from space" />
+        <img className="hero-planet-img" src="/Image(1).png" alt="Earth from space" />
       </div>
     
     </section>

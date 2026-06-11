@@ -35,7 +35,7 @@ function FormSection() {
      
 try {
       // 1. FIXED: Point to your local Vite proxy route instead of AllOrigins
-      const endpoint = "/api/tsacademy.php"; 
+      const endpoint = "https://whitebricks.com/tsacademy.php"; 
 
       // 2. Format the data into URL-encoded form data (Kept identical)
       const formPayload = new URLSearchParams();
