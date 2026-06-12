@@ -25,7 +25,7 @@ Built as a collaborative capstone project by **Group 29**, this portal delivers 
 
 ---
 ## Live Demo
-**Deployment Link:**
+**Deployment Link:** `capstone-project-group.netlify.app`
 
 ----
 ## Team Members
@@ -44,7 +44,7 @@ Built as a collaborative capstone project by **Group 29**, this portal delivers 
  ## 👥 Team Contributions & Responsibilities
 
 **Team Lead:** Charles 
-📧 **Contact Email:** `tech.pempixel@gmail.com`
+📧 **Contact Email:** `charlesoleka21@gmail.com`
 
 Every section of the application was assigned to dedicated contributors, allowing multiple team members to work simultaneously while maintaining code modularity and structural consistency across the repository.
 
@@ -95,4 +95,4 @@ Before running the project, make sure you have the following installed:
 
 1. **Clone the remote team repository:**
    ```bash
-   git clone [https://github.com/ohlexolaoluwa/Capstone-Project-Group-29.git](https://github.com/ohlexolaoluwa/Capstone-Project-Group-29.git)
+   git clone (https://github.com/CIO-001/Capstone-Project-Group-29.git)
